@@ -1,22 +1,10 @@
-import "./App.css";
-import Homepage from "./Homepage";
-import AboutLittleLemon from "./AboutLittleLemon";
-import Contact from "./Contact";
-import { Routes, Route, Link } from "react-router-dom";
+import logo from "./assets/logo.png"
 
 function App() {
   return (
-    <div className="App"> 
-    <nav className="nav">
-      <Link to="/" className="nav-item">Homepage</Link>
-      <Link to="/about" className="nav-item">About Little Lemon</Link>
-      <Link to="/contact" className="nav-item">Contact</Link>
-    </nav>
-      <Routes> 
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/about" element={<AboutLittleLemon />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-      </Routes>
+    <div className="App">
+      <h1>Task: Add an image below</h1>
+      <img src={logo} alt="Logo" />
     </div>
   );
 };
